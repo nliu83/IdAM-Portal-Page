@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
+        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -23,48 +24,65 @@
         <![endif]-->
         
         
-    <div class='ucsf-nav-bar'>
-        <ul>
-            <li><a href="https://www.ucsf.edu/">University of California San Francisco</a></li>
-            <!-- <li><a href="https://www.ucsf.edu/about#active-default">About UCSF</a></li>
-            <li><a href="https://www.ucsf.edu/search">Search UCSF</a></li>
-            <li><a href="https://www.ucsfhealth.org/">UCSF Medical Center</a></li> -->
-            <div class='search-bar'>
-                <input type="text" name="search-val" placeholder="Search">
-                
-                <button type="button">ADVANCED</button>
-            </div>
-        </ul>
-    </div>
+        <div class='ucsf-nav-bar'>
+                <ul>
+                <li><a href="https://www.ucsf.edu/">University of California San Francisco</a></li>
+                <!-- <li><a href="https://www.ucsf.edu/about#active-default">About UCSF</a></li>
+                <li><a href="https://www.ucsf.edu/search">Search UCSF</a></li>
+                <li><a href="https://www.ucsfhealth.org/">UCSF Medical Center</a></li> -->
+                <div class='search-bar'>
+                        <input type="text" name="search-val" placeholder="Search">
+                        
+                        <button type="button">ADVANCED</button>
+                </div>
+                </ul>
+        </div>
 
         <div class="jumbotron" style="background-color: #20315A ; color: white; position: static; padding-bottom: 25px">
         <h1 class="text-center">
-          <strong>IdAM Portal Page</strong>
+                <strong>IdAM Portal Page</strong>
         </h1>
         </div>
 
-    <div class="container" id="ucsf-portal-info">
-        <div class="jumbotron jumbotron-fluid" id="portal-info">
-            <div class="row">
-                <div class="col-sm-4">
-                        <div class = "card" id = "resource-card">
-                        </div>
-                        
-
-                </div>
-            </div>
+        <div class="container">
+                <button class="btn btn-default btn-lg btn-link trigger-status" style="font-size:12px;">
+                        <span class="glyphicon glyphicon-comment">Trigger files processing: 
+                        </span>
+                </button>
+                <span class="badge badge-notify">3</span>
         </div>
-    </div>
 
-   
+        <div class="container" id="ucsf-portal-info">
+
+                <div class="row"> 
+                
+                        <div class="col-sm-6 col-md-4">
+                                <div class = "card-body" id = "resource-card-col1"></div>
+                                
+                        </div> 
+                        <div class="col-sm-6 col-md-4">
+                                <div class = "card-body" id = "resource-card-col2"></div>
+                        </div> 
+                        <div class="col-sm-6 col-md-4">
+                                <div class = "card-body" id = "resource-card-col3"></div>
+                        </div> 
+                        
+                
+                </div>
+                
+        </div>
 
     
-    <script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+      
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
 
         <script src="assets/javascript/IdAMPortal.js"></script>
 
-       
+        
 
     <script src="" async defer></script>
     </body>
